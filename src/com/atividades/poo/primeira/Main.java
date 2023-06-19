@@ -8,9 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-    List<Integer> minhaLista = new ArrayList<>();
+        List<Integer> minhaLista = new ArrayList<>();
 
+        minhaLista.add(50);
+        minhaLista.add(30);
+        minhaLista.add(20);
 
+        int somaDaLista = somarListas(minhaLista);
+
+        System.out.println(somaDaLista);
 
     }
 
