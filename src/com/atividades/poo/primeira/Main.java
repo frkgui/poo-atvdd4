@@ -26,9 +26,7 @@ public class Main {
 
         Stream<Integer> streamFilterPares = streamLista.filter(numero -> numero % 2 == 0);
 
-        int soma = streamFilterPares.reduce(0,(a,b)-> a+b);
-
-        return soma ;
+        return streamFilterPares.reduce(0, Integer::sum);
 
     }
 
